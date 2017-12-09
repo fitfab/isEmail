@@ -1,0 +1,29 @@
+{
+  "name": "@username/isemail",
+  "version": "0.1.0",
+  "description": "email validation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fitfab/isEmail.git"
+  },
+  "keywords": [
+    "email",
+    "validator",
+    "isEmail",
+    "fitfab"
+  ],
+  "author": "Miguel Julio <miguel.julio.developer@gmail.com> (http://fitfab.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fitfab/isEmail/issues"
+  },
+  "homepage": "https://github.com/fitfab/isEmail#readme",
+  "devDependencies": {
+    "typescript": "2.6.2"
+  }
+}
