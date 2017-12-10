@@ -4,7 +4,9 @@
   "description": "email validation",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
     "build": "tsc"
   },
   "repository": {
@@ -24,6 +26,23 @@
   },
   "homepage": "https://github.com/fitfab/isEmail#readme",
   "devDependencies": {
+    "@types/jest": "21.1.8",
+    "jest": "21.2.1",
+    "ts-jest": "21.2.4",
     "typescript": "2.6.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
