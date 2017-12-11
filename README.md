@@ -50,6 +50,8 @@ Once you created the empty repo clone it:
 
 ### 4 Install Jest
 
+This setup should allow you to write Jest tests in Typescript and be able to locate errors.
+
 `npm i -D jest ts-jest @types/jest`
  
  * update the `package.json`
@@ -77,7 +79,7 @@ Once you created the empty repo clone it:
   }
  ```
 
-### 5 create the source file
+### 5 create the source and test file
 
 At this point create a `/lib` folder and the `index.ts` file:
 
@@ -89,6 +91,24 @@ export default function isEmail(str:string):boolean {
 
 }
 ```
+and the test file:
+
+```JavaScript
+import isEmail from './index'
+
+describe('Email Utility', ()=> {
+    test('checks for a valid email', ()=> {
+        expect(isEmail('me@mail.com')).toBe(true)
+    })
+    test('recognizes a malformed email', ()=>{
+        expect(isEmail('me@mail')).toBe(false)
+    })
+})
+```
+### Setup to Publish to NPM
+
+
+
 
 
 
