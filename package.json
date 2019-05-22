@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/fitfab/isEmail#readme",
   "devDependencies": {
-    "@types/jest": "21.1.8",
+    "@types/jest": "21.1.10",
     "jest": "21.2.1",
     "ts-jest": "21.2.4",
     "typescript": "2.6.2"
