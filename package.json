@@ -2,9 +2,13 @@
   "name": "isemail-by-miguel-julio",
   "version": "0.1.0",
   "description": "email validation",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "test:watch": "jest --watch",
     "coverage": "jest --coverage",
     "build": "tsc"
@@ -26,10 +30,10 @@
   },
   "homepage": "https://github.com/fitfab/isEmail#readme",
   "devDependencies": {
-    "@types/jest": "21.1.8",
-    "jest": "21.2.1",
-    "ts-jest": "21.2.4",
-    "typescript": "2.6.2"
+    "@types/jest": "^24.0.13",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.1"
   },
   "jest": {
     "transform": {
