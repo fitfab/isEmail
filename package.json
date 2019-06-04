@@ -2,9 +2,13 @@
   "name": "isemail-by-miguel-julio",
   "version": "0.1.0",
   "description": "email validation",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "test:watch": "jest --watch",
     "coverage": "jest --coverage",
     "build": "tsc"
